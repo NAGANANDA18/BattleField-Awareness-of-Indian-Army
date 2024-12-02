@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F11D15C-5410-4EE0-991F-95E3DA2EDD68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BattleField_Awareness_of_Indian_Army.My.MyApplication</StartupObject>
+    <RootNamespace>BattleField_Awareness_of_Indian_Army</RootNamespace>
+    <AssemblyName>BattleField Awareness of Indian Army</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BattleField Awareness of Indian Army.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BattleField Awareness of Indian Army.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Battlefield 3_4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manage Account\AccountSettings.Designer.vb">
+      <DependentUpon>AccountSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Account\AccountSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseConnection.vb" />
+    <Compile Include="FormInterface.vb" />
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.vb">
+      <DependentUpon>LoadingScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Account\ForgotPassword.Designer.vb">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Account\ForgotPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Account\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Account\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing.vb" />
+    <Compile Include="Manage Doctors\AddDoctor.Designer.vb">
+      <DependentUpon>AddDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Doctors\AddDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Doctors\TreatSoldier.Designer.vb">
+      <DependentUpon>TreatSoldier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Doctors\TreatSoldier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Doctors\ViewDoctor.Designer.vb">
+      <DependentUpon>ViewDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Doctors\ViewDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Doctors\ViewTreatSoldier.Designer.vb">
+      <DependentUpon>ViewTreatSoldier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Doctors\ViewTreatSoldier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Regiment\AddRegiment.Designer.vb">
+      <DependentUpon>AddRegiment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Regiment\AddRegiment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Regiment\ViewRegiment.Designer.vb">
+      <DependentUpon>ViewRegiment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Regiment\ViewRegiment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Regiment\ViewSoldierWithinRegiment.Designer.vb">
+      <DependentUpon>ViewSoldierWithinRegiment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Regiment\ViewSoldierWithinRegiment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Soldier\AddSoldier.Designer.vb">
+      <DependentUpon>AddSoldier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Soldier\AddSoldier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Soldier\UpdateSoldierInjured.Designer.vb">
+      <DependentUpon>UpdateSoldierInjured.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Soldier\UpdateSoldierInjured.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Soldier\ViewSoldier.Designer.vb">
+      <DependentUpon>ViewSoldier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Soldier\ViewSoldier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Criminals\AddCriminal.Designer.vb">
+      <DependentUpon>AddCriminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Criminals\AddCriminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Criminals\ViewCriminals.Designer.vb">
+      <DependentUpon>ViewCriminals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Criminals\ViewCriminals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Rank\AddRank.Designer.vb">
+      <DependentUpon>AddRank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Rank\AddRank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Rank\ViewSoldierRank.Designer.vb">
+      <DependentUpon>ViewSoldierRank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Rank\ViewSoldierRank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Stocks\AddStock.Designer.vb">
+      <DependentUpon>AddStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Stocks\AddStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Stocks\ViewStock.Designer.vb">
+      <DependentUpon>ViewStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Stocks\ViewStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Trained Dogs\AddTrainedDog.Designer.vb">
+      <DependentUpon>AddTrainedDog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Trained Dogs\AddTrainedDog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Trained Dogs\ViewTrainedDog.Designer.vb">
+      <DependentUpon>ViewTrainedDog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Trained Dogs\ViewTrainedDog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Manage Account\Registration.Designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Account\Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportorFeedback\ReportorFeedback.Designer.vb">
+      <DependentUpon>ReportorFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportorFeedback\ReportorFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportorFeedback\ViewReportorFeedback.Designer.vb">
+      <DependentUpon>ViewReportorFeedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportorFeedback\ViewReportorFeedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotControl.Designer.vb">
+      <DependentUpon>RobotControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RobotControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View the Details.Designer.vb">
+      <DependentUpon>View the Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View the Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Manage Account\AccountSettings.resx">
+      <DependentUpon>AccountSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Account\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Account\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Criminals\AddCriminal.resx">
+      <DependentUpon>AddCriminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Doctors\AddDoctor.resx">
+      <DependentUpon>AddDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Doctors\TreatSoldier.resx">
+      <DependentUpon>TreatSoldier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Doctors\ViewDoctor.resx">
+      <DependentUpon>ViewDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Doctors\ViewTreatSoldier.resx">
+      <DependentUpon>ViewTreatSoldier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Regiment\AddRegiment.resx">
+      <DependentUpon>AddRegiment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Regiment\ViewRegiment.resx">
+      <DependentUpon>ViewRegiment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Regiment\ViewSoldierWithinRegiment.resx">
+      <DependentUpon>ViewSoldierWithinRegiment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Soldier\AddSoldier.resx">
+      <DependentUpon>AddSoldier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Soldier\UpdateSoldierInjured.resx">
+      <DependentUpon>UpdateSoldierInjured.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Soldier\ViewSoldier.resx">
+      <DependentUpon>ViewSoldier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Criminals\ViewCriminals.resx">
+      <DependentUpon>ViewCriminals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Rank\AddRank.resx">
+      <DependentUpon>AddRank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Rank\ViewSoldierRank.resx">
+      <DependentUpon>ViewSoldierRank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Stocks\AddStock.resx">
+      <DependentUpon>AddStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Stocks\ViewStock.resx">
+      <DependentUpon>ViewStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Trained Dogs\AddTrainedDog.resx">
+      <DependentUpon>AddTrainedDog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Trained Dogs\ViewTrainedDog.resx">
+      <DependentUpon>ViewTrainedDog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Account\Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportorFeedback\ReportorFeedback.resx">
+      <DependentUpon>ReportorFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportorFeedback\ViewReportorFeedback.resx">
+      <DependentUpon>ViewReportorFeedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotControl.resx">
+      <DependentUpon>RobotControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View the Details.resx">
+      <DependentUpon>View the Details.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Battlefield 3_4.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
